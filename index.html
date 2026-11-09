@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BidSentry - Government bid monitoring for small business</title>
+<meta name="description" content="BidSentry watches government bid portals for your trade and flags matching RFPs the day they post. $35/month.">
+<style>
+:root{--navy:#12233f;--ink:#1c2733;--paper:#f4f6f9;--line:#c9d3e0;--accent:#b8860b;--flag:#8f1d1d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:0 1.25rem}
+header{background:var(--navy);color:#fff;border-bottom:4px solid var(--accent)}
+header .wrap{display:flex;justify-content:space-between;align-items:baseline;padding:1.4rem 1.25rem}
+.logo{font-size:1.5rem;font-weight:700;letter-spacing:.06em}
+.logo span{color:var(--accent)}
+.tag{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#9fb2cc}
+.hero{padding:3.5rem 0 2.5rem}
+h1{font-size:2.3rem;line-height:1.2;color:var(--navy);max-width:22ch}
+.hero p.lede{margin-top:1.1rem;font-size:1.1rem;max-width:58ch;color:#3c4a5c}
+h2{font-size:1.25rem;color:var(--navy);text-transform:uppercase;letter-spacing:.1em;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin:2.8rem 0 1.2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.step{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);padding:1.1rem}
+.step b{display:block;color:var(--navy);margin-bottom:.35rem}
+.sample{background:#fff;border:1px solid var(--line);padding:1.2rem;font-size:.95rem}
+.sample .lbl{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#7c8a9c;margin-bottom:.7rem}
+.alert{border-left:4px solid var(--flag);padding:.5rem .9rem;margin-bottom:.9rem;background:#fdf7f7}
+.alert .src{font-family:Consolas,monospace;font-size:.8rem;color:#6a7789}
+.alert b{color:var(--flag)}
+.pricing{background:var(--navy);color:#fff;margin-top:3rem;padding:2.4rem 0}
+.pricing .wrap{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.price{font-size:2.6rem;font-weight:700}
+.price small{font-size:1rem;font-weight:400;color:#9fb2cc}
+button.buy{background:var(--accent);color:#12233f;border:0;font-size:1.05rem;font-weight:700;padding:.95rem 2.2rem;cursor:pointer;letter-spacing:.03em}
+button.buy:hover{background:#d4a017}
+.fine{padding:1rem 0 0;font-size:.85rem;color:#9fb2cc}
+section.why{padding-bottom:2rem}
+.modal{display:none;position:fixed;inset:0;background:rgba(10,18,32,.65);align-items:center;justify-content:center;padding:1rem}
+.modal.open{display:flex}
+.card{background:#fff;max-width:460px;padding:2rem;border-top:6px solid var(--accent)}
+.card h3{color:var(--navy);margin-bottom:.7rem}
+.card p{margin-bottom:.9rem;font-size:.95rem}
+.card a.mail{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:.7rem 1.4rem;font-weight:600}
+.card .dismiss{display:block;margin-top:1rem;font-size:.85rem;color:#6a7789;cursor:pointer;text-decoration:underline;background:none;border:0}
+footer{padding:2rem 0 3rem;font-size:.82rem;color:#7c8a9c}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="logo">BID<span>SENTRY</span></div>
+<div class="tag">Bid portal watch service</div>
+</div></header>
+
+<div class="wrap">
+<section class="hero">
+<h1>Government contracts go to whoever sees the posting first.</h1>
+<p class="lede">State and local agencies post bids on dozens of separate portals, often with two weeks to respond. BidSentry watches the portals that carry your trade and sends you a sourced flag the day a matching RFP appears - with the deadline, the buyer, and the link to the original posting.</p>
+</section>
+
+<h2>How it works</h2>
+<div class="steps">
+<div class="step"><b>1. Tell us your trade</b>"Commercial roofing, Texas" or "IT services, federal" is enough. We map it to the portals and commodity codes that actually carry those bids.</div>
+<div class="step"><b>2. We watch the portals</b>State procurement sites, county and city bid boards, and SAM.gov - checked on a rolling schedule, not scraped once a month.</div>
+<div class="step"><b>3. You get the flag</b>A short, dated note: what posted, who is buying, when it closes, and the link to the source so you can verify every word.</div>
+</div>
+
+<h2>What a flag looks like <span style="font-size:.7rem;color:#7c8a9c;letter-spacing:.1em">(ILLUSTRATIVE SAMPLE)</span></h2>
+<div class="sample">
+<div class="lbl">Sample flag - format preview, not a live posting</div>
+<div class="alert"><b>NEW BID - Janitorial services, county facilities</b><br>Buyer: Example County Purchasing Office. Closes in 18 days. Estimated term: 2 years.<br><span class="src">source: examplecounty.gov/purchasing/bids (posted today)</span></div>
+<div class="alert"><b>DEADLINE MOVED - HVAC maintenance RFP</b><br>The closing date on a bid already on your watch list moved up by 6 days.<br><span class="src">source: examplestate.gov/procurement (changed today)</span></div>
+</div>
+
+<section class="why">
+<h2>Why not just check yourself</h2>
+<p style="max-width:62ch">Because the postings are scattered across portals that each work differently, and the window is short. The businesses that win small government contracts are the ones with a routine for seeing everything - this service is that routine, run for you every day.</p>
+</section>
+</div>
+
+<section class="pricing"><div class="wrap">
+<div><div class="price">$35<small>/month</small></div>
+<div>Daily portal watch for your trade. Flags the day bids post or change. Cancel anytime.</div></div>
+<button class="buy" id="buyBtn">Start watching - $35/mo</button>
+</div>
+<div class="wrap"><div class="fine">No long-term contract. Every flag links to the original government posting so you can verify it yourself.</div></div>
+</section>
+
+<div class="wrap"><footer>BidSentry is a monitoring service. We find and flag public postings; we do not write proposals and we cannot guarantee awards. BidSentry is a Plainfield Press project.</footer></div>
+
+<div class="modal" id="modal"><div class="card">
+<h3>We're not taking payment yet</h3>
+<p>BidSentry is in its final pre-launch check. Purchases open soon - join the early-access list and you'll get a code for your first month when we open.</p>
+<p>Nothing is charged on this page.</p>
+<a class="mail" id="waitLink" href="mailto:mfcyxd@mail.instinct.com?subject=BidSentry%20early%20access">Join the early-access list</a>
+<button class="dismiss" id="dismiss">Back to the page</button>
+</div></div>
+
+<script data-goatcounter="https://bidsentry.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+var m=document.getElementById('modal');
+document.getElementById('buyBtn').addEventListener('click',function(){
+  if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:'buy-intent',title:'Buy intent',event:true});}
+  m.classList.add('open');
+});
+document.getElementById('waitLink').addEventListener('click',function(){
+  if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:'waitlist-click',title:'Waitlist click',event:true});}
+});
+document.getElementById('dismiss').addEventListener('click',function(){m.classList.remove('open');});
+</script>
+</body>
+</html>
